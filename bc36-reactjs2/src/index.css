@@ -1,0 +1,126 @@
+.main {
+	overflow: hidden;
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.main:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	left: 0;
+	top: 0;
+	background-color: rgba(36, 36, 36, 0.356);
+	position: absolute;
+	z-index: -1;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.header-tittle {
+	color: #fff;
+	width: 100%;
+	font-weight: 500;
+	text-align: center;
+	font-size: 25px;
+	padding: 20px 0px;
+	background: rgba(36, 36, 36, 0.637);
+	position: relative;
+	z-index: 2;
+}
+
+.model-left {
+	display: block;
+	width: 260px;
+	height: 320px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.model-right {
+	display: block;
+	width: 260px;
+	height: 320px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.glasses {
+	background: #fff;
+	box-sizing: border-box;
+	padding: 20px 30px;
+}
+
+.model-thumbnail {
+	width: 55%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 80px;
+	opacity: 0.6;
+}
+.content {
+	padding: 0px 4px;
+	background-color: rgba(249, 176, 106, 0.75);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	border-bottom: 4px solid rgba(255, 101, 81, 0.3);
+}
+.content-right {
+	padding: 0px 4px;
+	background-color: rgba(249, 176, 106, 0.75);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	display: none;
+	border-bottom: 4px solid rgba(255, 101, 81, 0.3);
+}
+.model-title {
+	font-size: 16px;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}
+.model-desc {
+	font-size: 13px;
+	width: 100%;
+	font-weight: 500;
+}
+.glasses-item {
+	width: 95px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 12px;
+	border: 1px solid silver;
+	margin: 5px;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+.glasses-item:hover {
+	transform: scale(1.1);
+}
+.col-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
